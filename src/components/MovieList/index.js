@@ -29,6 +29,7 @@ export const MovieList = () => {
             <MoviePoster
               src={item._embedded.show.image.medium}
               width="210"
+              height="295"
             ></MoviePoster>
             <MovieName>{item.name}</MovieName>
             <ReleaseDate>{item._embedded.show.premiered}</ReleaseDate>
