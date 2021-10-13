@@ -15,7 +15,6 @@ export const MovieList = () => {
     axios
       .get("https://api.tvmaze.com/schedule/web?date=2021-09-22&country=US")
       .then(function (response) {
-        console.log(response.data);
         setMovie(response.data);
       })
       .catch(function (error) {
