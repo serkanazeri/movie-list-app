@@ -26,7 +26,10 @@ export const MovieList = () => {
       {movie &&
         movie.map((item, index) => (
           <MovieItem key={index}>
-            <MoviePoster src={item._embedded.show.image.medium}></MoviePoster>
+            <MoviePoster
+              src={item._embedded.show.image.medium}
+              width="210"
+            ></MoviePoster>
             <MovieName>{item.name}</MovieName>
             <ReleaseDate>{item._embedded.show.premiered}</ReleaseDate>
           </MovieItem>
