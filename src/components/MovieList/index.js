@@ -13,7 +13,7 @@ export const MovieList = () => {
   const [movie, setMovie] = useState("");
   useEffect(() => {
     axios
-      .get("https://api.tvmaze.com/schedule/web?date=2021-09-22&country=US")
+      .get("https://api.tvmaze.com/schedule/web?date=2021-12-22&country=US")
       .then(function (response) {
         setMovie(response.data);
       })
