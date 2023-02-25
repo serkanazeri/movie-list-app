@@ -18,6 +18,7 @@ export const StyledMovieList = styled.div`
 
 export const MovieItem = styled.div`
   margin: 0 1rem;
+  max-width: 13.125rem;
 `;
 
 export const MoviePoster = styled.img`
@@ -28,6 +29,9 @@ export const MovieName = styled.h2`
   color: #fff;
   font-size: 1.2rem;
   margin: 0.75rem 0 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 export const ReleaseDate = styled.span`
